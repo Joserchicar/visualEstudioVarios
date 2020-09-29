@@ -1,0 +1,39 @@
+.card {
+    background-image: url('https://i.picsum.photos/id/350/300/300.jpg');
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .fa-heart {
+    color: red;
+    font-size: 2em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.card:hover .content {
+    bottom: 0;
+    transition: 2s;
+}
+
+
+.card .content {    
+    background-color: rgba(0,0,0, 0.6); 
+    padding: 10px;
+    position: relative;
+    bottom: -260px;
+    height: 100%;
+}
+
+.card .content h2 {
+    color: rgb(33, 198, 219);
+    margin-bottom: 5px;
+}
+
+.card .content p  {     
+    color: #FFF;
+}    

@@ -1,0 +1,57 @@
+/* estilos para los ejemplos de posicionamiento y visualizacion */
+
+section {
+    margin:20px auto;
+    padding: 10px;
+    background-color: darkslategray;
+    border: 1px solid #FFF;
+}
+
+h2 {
+    color: #FFF;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    text-align: center;
+    display: inline-block; }
+
+.destacada {
+    background-color: darkturquoise;
+}
+
+.relativa {
+    position: relative;
+    top: 15px;
+    left: 15px;  
+}
+
+.absoluta {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+}
+
+.fija{
+    position: fixed;
+    bottom:15px;
+    left:15px;
+}
+.stinky{
+    position: sticky;
+    
+}
+/* estilos para los ejemplos de posicionamiento y visualizacion */
+
+section {
+    margin:20px auto;
+    padding: 10px;
+    background-color: darkslategray;
+    border: 1px solid #FFF;
+}
+
+h2 {
+    color: #FFF;
+}

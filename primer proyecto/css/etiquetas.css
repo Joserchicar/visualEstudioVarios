@@ -1,0 +1,60 @@
+
+/* 2  Etiquetas - Estilos basicos de nuestra Web
+******************************************************************/
+
+/* selector basico de etiqueta, da estilos a todos los h1 */
+h1, h2, h3 {   
+    color: teal;
+    font-size: 1.6em;
+    text-align: center;      
+    text-transform: lowercase;    
+}
+
+h2 {       
+    font-size: 1.4em;    
+}
+
+h3 {
+    font-size: 1.2em;
+}
+code{
+   background-color: antiquewhite; 
+   color: rgb(207, 62, 62);
+   padding: 5px 10px;
+}
+
+p {
+    font-size: 1em; 
+    color: rgba(75, 90, 180, 50); 
+    /* color: #0000FF; */
+    /* color: blue; */
+
+
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+
+/* selector descentende */
+
+p span { 
+    color: red; 
+}
+
+
+/* Selector de clase se asocia al atributo class de una etiqueta y empiezan por "." */
+
+.destacado {
+    color: pink;
+}
+
+.otra-clase {    
+    letter-spacing: 5px;
+}
+
+
+/* selector de ID , el id debe ser unico y no se puede repetir en el HTML */
+#principal {
+    color: darkmagenta;
+}
+

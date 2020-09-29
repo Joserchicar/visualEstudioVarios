@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+    <div class="form container">
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            
+            <label for="name" class="obligatoria" >Name:</label>
+            <input type="text" name="name" id="name"><br>
+
+            <br>
+
+            <label for="surname" class="obligatoria">First name:</label>
+            <input type="text" name="surname" id="surname"><br>
+
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" step="1" placeholder="000-999" name="age" id="age" size="5" minlength="1" maxlength="3"><br>
+
+            <br>
+
+            <fieldset>
+                <legend>Choose your gender:</legend>
+                    <label for="gender">Genre:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>                    
+            </fieldset>
+            
+
+            <br>
+
+            <fieldset>
+                <legend>Choose yours Hours:</legend>
+
+                <input type="checkbox" id="fulltime" name="hours" value="ft">
+                <label for="fulltime"> Full time</label><br>
+
+                <input type="checkbox" id="parttime" name="hours" value="pt">
+                <label for="parttime"> Part time</label><br>
+
+                <input type="checkbox" id="all" name="hours" value="all">
+                <label for="all"> All</label><br>
+            </fieldset>
+
+
+
+            <label for="text">Comments:</label><br>
+            <textarea name="message" 
+                      cols="50" 
+                      rows="10" 
+                      id="text" 
+                      placeholder="Tus comentarios son de agradecer..."></textarea>
+
+            <br>
+
+            <label for="photo">Add your photo</label><br>
+            <input type="file" name="photo" id="photo"><br>
+
+            <br>
+
+            <input type="submit" value="Send">
+
+        </form>
+
+    
+</body>
+</html>

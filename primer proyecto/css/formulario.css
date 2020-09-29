@@ -1,0 +1,21 @@
+
+form {
+    background-color: #DDD;
+    border: 1px solid rgb(167, 164, 164);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #776D6D;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+.obligatoria:before{
+    content: "* ";
+}

@@ -1,0 +1,15 @@
+
+
+header{
+    background: #003580;
+}
+main{
+    max-width:1024px; 
+    
+}
+footer{
+    background: #f7f7f7;
+    color: #6f777b;
+    font-size: 13px;
+    line-height: 2;
+}

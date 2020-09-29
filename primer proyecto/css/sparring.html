@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="sparring.css">
+
+</head>
+<body>
+    
+    <header>
+       
+        <h1 id="principal"> Posicionamiento</h1>
+
+    </header>
+    <div id="nav-principal">
+        <nav class="container">
+            <ul>
+                <li><a href="#normal">normal</a></li>
+                <li><a href="#relativo">relativo</a></li>
+                <li><a href="#absoluto">absoluto</a></li>
+                <li><a href="#fijo">fijo</a></li>
+                <li><a href="#stiky">stiky</a></li>
+              
+            </ul>
+        </nav>   
+    </div>
+    <div>
+        <h2> posicionamiento normal</h2>
+
+        <div>
+            <p>El posicionamiento normal o estático es el modelo que utilizan por defecto los navegadores para mostrar los elementos de las páginas.</p>
+            <p>En este modelo, sólo se tiene en cuenta si el elemento es de bloque o en línea, sus propiedades width y height y su contenido.
+            <p> Los elementos de bloque forman lo que CSS denomina "contextos de formato de bloque".</p>  
+            <p>En este tipo de contextos, las cajas se muestran una debajo de otra comenzando desde el principio del elemento contenedor.</p> 
+            <p>La distancia entre las cajas se controla mediante los márgenes verticales.</p> 
+        </div>
+    </div>
+
+    <section id="normal">
+       
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja">caja 2</div>
+            <div class="caja">caja 3</div>
+        </div>
+    </section > 
+
+    <div>
+        <h2> posicionamiento relativo</h2>
+
+        <div>
+            <p>El posicionamiento relativo desplaza una caja respecto de su posición original establecida mediante el posicionamiento normal.</p> 
+            <p>El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.</p>
+             <p> Según se aumenta un lado , movemos la caja hacia el otro.</p>
+        </div>
+    </div>
+ 
+
+    <section id="relativo">
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja relativa destacada">caja 2</div>
+            <div class="caja">caja 3</div>
+        </div>
+    </section >
+
+    <div>
+        <h2> posicionamiento absoluto</h2>
+
+        <div>
+            <p>Cuando una caja se posiciona de forma absoluta, el resto de elementos de la página se ven afectados y modifican su posición.</p> 
+            <p>Al igual que en el posicionamiento relativo, cuando se posiciona de forma absoluta una caja es probable que se produzcan solapamientos con otras cajas.</p> 
+           <p> Esto provoca que el resto de elementos de la página modifiquen su posición. </p>
+           <p>En concreto, la caja siguiente deja su lugar original y pasa a ocupar el hueco dejado por la caja con posicionamiento absoluto.</p>
+        </div>
+    </div>
+
+    <section id="absoluto">
+    
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja absoluta destacada">caja 2</div>
+            <div class="caja">caja 3</div>
+        </div>
+    </section>
+
+    <div>
+        <h2> posicionamiento fijo</h2>
+
+        <div>
+            <p>El estándar CSS considera que el posicionamiento fijo es un caso particular del posicionamiento absoluto, ya que sólo se diferencian en el comportamiento de las cajas posicionadas.</p> 
+            <p>La principal característica de una caja posicionada de forma fija es que su posición es inamovible dentro de la ventana del navegador.</p> 
+            <p> posicionamiento fijo hace que las cajas no modifiquen su posición ni aunque el usuario suba o baje la página en la ventana de su navegador.</p> 
+             <p> Si la página se visualiza en un medio paginado (por ejemplo en una impresora) las cajas posicionadas de forma fija se repiten en todas las páginas. </p>
+            <p>Esta característica puede ser útil para crear encabezados o pies de página en páginas HTML preparadas para imprimir.</p> 
+        </div>
+    </div>
+    <section id="fijo">
+        
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja fija destacada">caja 2</div>
+            <div class="caja">caja 3</div>  
+        </div>
+    </section>
+
+    <div>
+        <h2> posicionamiento Stiky (pegajoso)</h2>
+
+        <div>
+            
+            <p>Con este posicionamiento conseguimos que la csja indicada permanezca siempre en una misma posición.</p> 
+            <p>Esta posición es relativa al contenedor donde se encuentra.</p>
+            <p>En el caso de la barra de navegación, para poder dar ese efecto, debe estar contenida directamente por el body</p>
+            <p>asi, desplazandonos arriba y abajo de la pagina, la barra permanece en su sitio.</p>
+        </div>
+    </div>
+    <section id="stiky">
+        
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja stinky destacada">caja 2</div>
+            <div class="caja">caja 3</div>  
+        </div>
+    </section>
+    <div>
+        <h2> posicionamiento float</h2>
+
+        <div>
+            <p>Cuando una caja se posiciona con el modelo de posicionamiento flotante, automáticamente se convierte en una caja flotante, </p>
+            <p> lo que significa que se desplaza hasta la zona más a la izquierda o más a la derecha de la posición en la que originalmente se encontraba.</p></p>
+            <p> El comportamiento de las demas cajas es, que ocupan el hueco dejado por la caja con float .</p>
+            <p> La caja con posicionamiento float está en un plano superior a las demas.</p>
+            <p>Flota sobre ellas,. por lo que se puede posicionar sobre una de ellas</p>
+        </div>
+    </div>
+    <section id="float">
+        
+        <div class="contenedor">
+            <div class="caja">caja 1</div>
+            <div class="caja float destacada">caja 2</div>
+            <div class="caja">caja 3</div>  
+        </div>
+    </section>
+    
+
+
+
+
+</body>
+</html>

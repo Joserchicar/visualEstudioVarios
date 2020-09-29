@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif,Arial, Helvetica, ;
+    background-color:rgb(173, 168, 168) ;
+}
+p{
+    font-size: 12px;
+}
+h1{
+    color:rgb(2, 2, 54);
+    font-size:25px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+table,th{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+tr:hover{ 
+    background-color: burlywood;
+}
+.bloque_tabla_titulo{
+    background-color: rgb(2, 2, 54);
+    color:white;
+}
+.bloque_tabla_linea1{
+    background-color: white;
+    
+}
+.bloque_tabla_linea2{
+    background-color: rgb(104, 104, 245);
+}
+.pie_pagina_links{
+    font-weight: 600;
+}
+.pie_pagina_links:visited{
+    color:blueviolet ;
+}
+.pie_pagina_links:hover{
+    color:red;
+}
+#cabecera_menu{
+    background-color:rgb(151, 151, 168) ;
+}
+#cabecera_menu_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(16, 12, 236);
+    display: flex; /* conseguir que se pongan en horizontal los LIs */
+    justify-content: center;  
+} 
+#cabecera_menu_menu li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*  quitar linea inferior enlace */
+}
+#cabecera_menu_menu li:hover:not(.active) {
+    background-color: rgb(172, 105, 105);
+} 
+.active {
+    background-color: rgb(99, 180, 102);
+}
+  
