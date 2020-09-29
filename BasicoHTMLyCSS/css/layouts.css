@@ -1,0 +1,66 @@
+/* 3  Layouts 
+******************************************************************/
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #003580;
+    color: #FFF;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+   margin-top: 100px;
+}
+
+footer {
+    background-color: #f7f7f7;
+}
+
+
+/* menu navegacion
+********************************/
+
+#nav-principal {
+    background-color: rgb(51, 47, 47);    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#nav-principal nav { 
+    
+}
+
+#header-content {
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;    
+}
+
+nav li {
+    list-style: none;
+    padding: 10px 5px;
+}
+
+nav li:hover:not(.active) {
+    background-color: rgb(95, 89, 89);   
+}
+
+.active {
+    background-color: rgb(69, 143, 32);   
+}

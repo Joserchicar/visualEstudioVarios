@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a href="index.html">Volver</a>
+    <main class="container">
+        <h1>Formularios</h1>
+        
+            <ul>
+                <li><a href="https://uniwebsidad.com/libros/xhtml" target="_blank">Capítulo 8. Formularios </a></li>
+                <li><a href="https://uniwebsidad.com/libros/css/capitulo-11" target="_blank">Capítulo 11. Formularios </a></li>
+            </ul>
+            <p>HTML es un lenguaje de marcado cuyo propósito principal consiste en estructurar los contenidos de los documentos y páginas web. Sin embargo, HTML también incluye elementos para crear aplicaciones web. El estándar HTML/XHTML permite crear formularios para que los usuarios interactúen con las aplicaciones web.</p>
+            <p>Normalmente los datos se envian a traves de <b>POST</b>.</p>
+            <p><code>GET</code> envia los parametros en la URL y suele ser para pedir información al servidor, se ejecuta las acciones con la etiqueta <code>A</code></p>
+            <p><code>POST</code> envia los parametros a traves de un <code>form</code> y se utiliza para enviar informacion al servidor, por ej.: Crear o modificar un producto </p>
+            <p><code>name = "texto"</code> - Asigna un nombre al control (es imprescindible para que el servidor pueda procesar el formulario y recoger el valor del PARAMETRO <code>request.getParameter("texto")</code></p>
+        
+
+            <form action="#" method="post">
+
+                Escribe tu nombre:
+                <input type="text" name="nombre" value="" placeholder="Tu Nombre"/>
+              
+                <br/>
+                Contraseña:
+                <input type="password" name="contraseina" value="" placeholder="Al menos 6 caracteres"/>
+                <br/>
+              
+
+                Puestos de trabajo buscados <br/>
+                <input name="puesto_directivo" type="checkbox" value="direccion"/> Dirección<br/>
+                <input name="puesto_tecnico"   type="checkbox" value="tecnico"/> Técnico<br/>
+                <input checked name="puesto_empleado"  type="checkbox" value="empleado"/> Empleado<br/>
+                
+
+                Sexo <br/>
+                <input type="radio" name="sexo" value="hombre" checked /> Hombre <br>
+                <input type="radio" name="sexo" value="mujer" /> Mujer <br>
+
+
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpiar formulario" />
+              
+            </form>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* 
+* Nuestra hoja de estilos CSS
+* 
+*  1. Reset - limpiar los estilos de todas las etiquetas para evitar problemas con los navegadores
+*  2. Etiquetas (normalize) - Dar estilos para todas las etiquetas 
+*  3. Layouts o las secciones de la pagina ( head, footer, main, sidebar....)
+*  4. Clases Comunes ( botones, mensajes de alerta, .... )
+*  5. Cosas mas especificas por ID
+*
+*/
+@import url("posicionamiento.css"); 
+@import url("card.css");
+@import url("etiquetas.css"); 
+@import url("formulario.css");
+@import url("layout.css");
+@import url("layouts.css");
+@import url("normalize.css");
+@import url("reset.css");
+
+
+/* selector basico de etiqueta, da estilos a todos los h1 */
+h1, h2, h3 {   
+    color: teal;
+    font-size: 40px;
+    text-align: center;      
+    text-transform: lowercase;    
+}
+
+h2 {       
+    font-size: 30px;    
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+/*la barra de navegacion en horizontal*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* conseguir que se pongan en horizontal los LIs */
+    /* justify-content: center; */
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*  quitar linea inferior enlace */
+}
+  
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #4CAF50;
+} 
+  
+
+/* selector descentende */
+
+p span { 
+    color: red; 
+}
+section{
+ margin-top: 1rem;
+margin-left: 2rem;
+margin-right: 3rem;   
+
+}
+
+/* Selector de clase se asocia al atributo class de una etiqueta y empiezan por "." */
+
+.destacado {
+    color: pink;
+}
+
+.otra-clase {    
+    letter-spacing: 5px;
+}
+
+/* selector de ID , el id debe ser unico y no se puede repetir en el HTML */
+#principal {
+    color: darkmagenta;
+}

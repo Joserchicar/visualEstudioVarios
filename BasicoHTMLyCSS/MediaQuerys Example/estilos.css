@@ -1,0 +1,52 @@
+h1{
+
+    color:teal;
+
+}
+main{
+    background-color:white ;
+
+}
+/* Aparatos Extra Pequeños (phones, 600px y menores) */
+@media only screen and (max-width: 600px) {
+    main{
+        background-color:yellow ;
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        background-color:pink ;
+    }
+
+
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        background-color:orange ;
+    }
+
+}
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        background-color: blueviolet ;
+    }
+
+
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    main{
+        background-color: green ;
+    }
+
+}
